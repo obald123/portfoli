@@ -352,6 +352,48 @@ section {
     line-height: 1.6;
 }
 
+.repo-btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1.5px solid #2563eb;
+    color: #2563eb;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.repo-btn:hover {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.portfolio-thumb {
+    width: 100%;
+    height: 180px;
+    background: #e5e7eb;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.portfolio-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    display: block;
+}
+
+.portfolio-card ul {
+    margin: 0.5rem 0 0 1.25rem;
+}
+
+.portfolio-card li {
+    margin-bottom: 0.35rem;
+}
+
 .tech-tags {
     display: flex;
     gap: 0.5rem;
@@ -511,5 +553,10 @@ footer {
 
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Slightly shorter thumbs on small screens */
+    .portfolio-thumb {
+        height: 140px;
     }
 }
